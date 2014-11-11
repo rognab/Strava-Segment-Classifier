@@ -1,0 +1,70 @@
+Workout Type Definitions
+AR (Active Recovery) 
+Terrain: flat, Gearing: low.
+Super-easy ride. Float the pedals Maintain heart rate and muscular effort at a sub-zone 1 level. Spin the legs to maximize circulation with minimal effort.
+
+CA (Cadence) 
+Terrain: varied, Gearing: low (slightly under-geared).
+Maintain cadence >100 rpm on flat terrain, >80 rpm climbing. Use higher cadence (lower force) to achieve desired HR zones.
+
+CL (Climbing) 
+Terrain: hills, Gearing: low, Cadence: ~75-90 rpm.
+
+CS (Climbing Speed) 
+Terrain: gradual hill, Cadence: >80 rpm
+Seated accelerations to maximum speed. Stay in the saddle. HR not relevant to guide efforts.
+
+CT (Cross-Train)
+
+ER (Endurance Ride) 
+Terrain: varied, Cadence: 75-90 rpm climbing, 90-110 rpm flat terrain.
+
+LS (Leg Speed) 
+Terrain: flat, Gearing: low, Cadence: max.
+Maximum cadence possible while maintaining good form & stability in the saddle.
+
+MB (Mountain Bike) 
+Terrain: hills, Gearing: low, Cadence: ~70-90 rpm.
+
+OO (On/Off) 
+Terrain: flat or climbs, Gearing: as necessary, Cadence: moderate to high.
+Continuous for noted time. High end efforts are sustained rather than continuous accelerations, recovery is as noted (usually z2).
+
+RC (Race)
+
+RP (Race Prep) 
+Terrain: flat, Gearing: low, Cadence: >100 rpm.
+Easy spin with some zone 1. In last hour do 2 short (20-30sec) zone 4 efforts. Allow sufficient cool down to flush the legs well.
+
+RS (Resistance/Force) 
+Terrain: gradual climb, Gearing: very high (over-geared), Cadence: 50-60 rpm
+Focus on circular force application around the entire pedal stroke - BIG gear, LOW cadence, HIGH force.
+
+RD (Rest Day)
+
+SL (Single Leg Pedaling) 
+Terrain: flat or stationary trainer, Gearing: low to moderate, Cadence: varies.
+Isolate pedaling with each leg, keeping nonworking leg unclipped from the pedal.
+
+SPD (Speed) 
+Terrain: flat, Gearing: moderate, Cadence: 100 rpm+.
+From zone 2 tempo, seated acceleration to max speed. Shift up as necessary, stay in the saddle. HR not relevant to guide efforts.
+
+SP (Sprints) 
+Terrain: flat, Gearing: moderate to high, Cadence: >100 rpm.
+Explosive effort out of the saddle to maximum speed. HR not relevant to guide efforts.
+
+ST (Supra-Threshold) 
+Terrain: short hill, Gearing: medium, Cadence: 75-90 rpm.
+Peak effort for given interval. Heart rate is less important than the intensity of the efforts. HR not relevant to guide efforts.
+
+TE (Tempo Endurance) 
+Terrain: flat to rolling, Gearing: moderate, Cadence: ~90-110 rpm.
+
+TR (Trainer)
+
+TT (Time-Trial Bike)
+
+WT (Weights)
+
+OT (Other)
