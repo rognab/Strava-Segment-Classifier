@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/home')
 def index():
-    df = pd.read_csv('data/polylines_data.csv')
+    df = pd.read_csv('data/p_polylines_data.csv')
     poly = df['polyline'].values
     labels = df['labels'].values
     x = zip(labels,poly)
@@ -16,12 +16,15 @@ def index():
 @app.route('/clusters', methods=['POST'])
 def cluster_map():
     clusters = [int(c) for c in request.form.values()]
-    df = pd.read_csv('data/polylines_data.csv')
+    df = pd.read_csv('data/p_polylines_data.csv')
     seg = df[df['labels'].isin(clusters)]
     poly = seg['polyline'].values
     labels = seg['labels'].values
     segments = seg['index'].values
-    x = zip(labels,poly,segments)
+    grade = seg['average_grade'].values
+    distance = seg['distance'].values
+    elevation = seg['total_elevation_gain'].values
+    x = zip(labels,poly,segments,grade,distance,elevation)
     return render_template('p_clusters_index.html', data = x)
 
 if  __name__ == '__main__':

@@ -43,9 +43,9 @@ function initialize() {
     var polylines = [];
     var infos = [];
 
-'{% for label, poly, segments in data %}'
+'{% for label, poly, segments, grade, distance, elevation in data %}'
 
-      var contentString = '<div><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
+      var contentString = '<div><dl><dd>Total distance(m): {{distance}}</dd><dd>Average gradient: {{grade}}</dd><dd>Total elevation gain(m): {{elevation}}</dd></dl><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString
