@@ -1,9 +1,9 @@
 <html> 
 <head> 
-<title>Test</title> 
+<title>Segments</title> 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&amp;sensor=false"></script>
 <style type="text/css"> 
-#map {width:70%;height:600px;}
+#map {width:890px;height:550px;float:left;}
 </style> 
 <script type='text/javascript'>
 function initialize() {
@@ -12,12 +12,12 @@ function initialize() {
     var myOptions = {
         zoom: 9,
         center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROAD
     }
     var styles = [{
         stylers: [
             { hue: "#3c636b" },
-            { saturation: -85 }
+            { saturation: -65 }
         ]
     },{
         featureType: "road",
@@ -39,7 +39,7 @@ function initialize() {
 
     map.setOptions({styles: styles});
 
-    var Colors = ["#f00000", "#0000ff","000000", "#00ff00"];
+    var Colors = ["#008000", "#ff0000", "#0000FF", "000000"];
 
 '{% for label, poly in data %}'
 
@@ -49,23 +49,23 @@ function initialize() {
         path: decodedPath1,
         strokeColor: Colors['{{label}}'],
         strokeOpacity: 1.0,
-        strokeWeight: 2,
+        strokeWeight: 3,
         map: map
     });
 '{% endfor %}'
 }
 </script> 
 </head> 
-<body onload="initialize()"> 
-     <h1> Bay Area Strava Segments Classifier (Rider Data) </h1>
-     <form action="/clusters" method='POST' >
-        <input type="checkbox" name="cluster1" value=0 > Cluster 1
+<body onload="initialize()" style="font-family:futura;"> 
+     <h1> Bay Area Strava Segments Classifier: Rider Data Set</h1>
+     <form action="/rider_clusters" method='POST' >
+        <input type="checkbox" name="cluster1" value=0 > Long steady efforts
         <br>
-        <input type="checkbox" name="cluster2" value=1 > Cluster 2
+        <input type="checkbox" name="cluster2" value=1 > Long and short high speed efforts
         <br>
-        <input type="checkbox" name="cluster3" value=2 > Cluster 3
+        <input type="checkbox" name="cluster3" value=2 > Steady/Medium efforts
         <br>
-        <input type="checkbox" name="cluster4" value=3 > Cluster 4
+        <input type="checkbox" name="cluster4" value=3 > Medium/High efforts
         <br>
         <input type="submit" value="Submit">
     </form> 

@@ -18,9 +18,9 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 # stuff for the Strava api
-strava = 'https://www.strava.com/api/v3/segments/'
-url = 'https://www.strava.com/api/v3/segments/starred'
-headers = {'Authorization': 'Bearer a99afa53e8db5aba589b1f3bf9d8f06e00a2184a'}
+STRAVA = 'https://www.strava.com/api/v3/segments/'
+URL = 'https://www.strava.com/api/v3/segments/starred'
+HEADERS = {'Authorization': 'Bearer a99afa53e8db5aba589b1f3bf9d8f06e00a2184a'}
 
 def get_data():
     '''
@@ -32,7 +32,7 @@ def get_data():
 
     for i in range(1,4,1):
         payload = {'page': i, 'per_page': 200}
-        r = requests.get(url, data=payload, headers=headers)
+        r = requests.get(URL, data=payload, headers=HEADERS)
         physical_data += r.json()
 
     with open('data/physical_data.json', 'wb') as f:
@@ -66,8 +66,8 @@ def get_seg_data(id_list):
     '''
     data = []
     for i in id_list:
-        actual_url = strava + str(i)
-        r = requests.get(actual_url, headers=headers)
+        actual_url = STRAVA + str(i)
+        r = requests.get(actual_url, headers=HEADERS)
         data.append(r.json())
 
     with open('data/seg_data.json', 'wb') as f:
