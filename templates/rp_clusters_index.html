@@ -45,7 +45,7 @@ function initialize() {
 
 '{% for label, poly, segments, grade, distance, elevation, hr, watts, time, speed in data %}'
 
-      var contentString = '<div style="font-family:futura;"><dl><dd>Total distance(m): {{distance}}</dd><dd>Average gradient: {{grade}}</dd><dd>Total elevation gain(m): {{elevation}}</dd><dd>Average time(sec): {{time}}</dd><dd>Average speed(m/sec): {{speed}}</dd><dd>Average heart rate(bpm): {{hr}}</dd><dd>Average power(kj): {{watts}}</dd></dl><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
+      var contentString = '<div style="font-family:futura;"><dl><dd>Total distance(mi): {{distance}}</dd><dd>Average gradient: {{grade}}</dd><dd>Total elevation gain(ft): {{elevation}}</dd><dd>Average time(min): {{time}}</dd><dd>Average speed(mph): {{speed}}</dd><dd>Average heart rate(bpm): {{hr}}</dd><dd>Average power(kj): {{watts}}</dd></dl><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString

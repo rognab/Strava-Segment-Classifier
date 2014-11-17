@@ -38,14 +38,14 @@ function initialize() {
 
     map.setOptions({styles: styles});
 
-    var Colors = ["#008000", "#ff0000", "#0000FF", "000000"];
-
+    var Colors = ["#008000", "000000", "#0000FF", "#ff0000"];
+    
     var polylines = [];
     var infos = [];
 
 '{% for label, poly, segments, grade, distance, elevation in data %}'
 
-      var contentString = '<div style="font-family:futura;"><dl><dd>Total distance(m): {{distance}}</dd><dd>Average gradient: {{grade}}</dd><dd>Total elevation(m): {{elevation}}</dd></dl><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
+      var contentString = '<div style="font-family:futura;"><dl><dd>Total distance(mi): {{distance}}</dd><dd>Average gradient: {{grade}}</dd><dd>Total elevation(ft): {{elevation}}</dd></dl><p><a href="http://www.strava.com/segments/+{{segments}}" target="_blank"> Strava page</a></p></div>';
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString
