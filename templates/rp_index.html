@@ -39,7 +39,7 @@ function initialize() {
 
     map.setOptions({styles: styles});
 
-    var Colors = ["#0000FF", "#ff0000", "#008000", "000000"];
+    var Colors = ["#0000FF", "000000", "#ff0000", "#008000"];
 
 '{% for label, poly in data %}'
 
@@ -61,11 +61,11 @@ function initialize() {
      <form action="/rider_physical_clusters" method='POST' >
         <input type="checkbox" name="cluster1" value=0 > Endurance, Cadence, and Leg Speed Intervals - flat and rolling
         <br>
-        <input type="checkbox" name="cluster2" value=1 > Tempo and Climbing Speed Intervals - rolling and climbs
+        <input type="checkbox" name="cluster2" value=1 > Climbing and Resistance Intervals - steep
         <br>
-        <input type="checkbox" name="cluster3" value=2 > Sprint and Tempo Intervals - flat and rolling
+        <input type="checkbox" name="cluster3" value=2 > Tempo and Climbing Speed Intervals - rolling and climbs
         <br>
-        <input type="checkbox" name="cluster4" value=3 > Climbing and Resistance Intervals - steep
+        <input type="checkbox" name="cluster4" value=3 > Sprint and Tempo Intervals - flat and rolling
         <br>
         <input type="submit" value="Submit">
     </form> 
