@@ -10,4 +10,12 @@ Outline of what is in this repo:
 4. The Workout Type Definitions.txt file is a discription of defined workout types for regimented training efforts.  
 5. The model_app.py file is the main file that calls on the template files and runs the app.  
 
+How to fully run the app you need:
+* model_app.py to run the app
+* the entire templates folder
+* p_polylines_data.csv, r_polylines_data.csv, and rp_polylines_data.csv from the data file (you can use the entire data folder or select these three files and make your own data folder)
 
+Then to actually run the app all you need to do is run the model_app.py file and go to the correct url.  
+/physical_data will give the model based on the physical characteristics of the segments.  
+/rider_data will give the model based on how competitive cyclists are riding the segments.  
+/rider_physical_data will give the model based on both data sets and is the best tool for classifying Bay Area Strava road segments according to specific competitive cyclist workout types. 
